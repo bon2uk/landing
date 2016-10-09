@@ -1,0 +1,23 @@
+{
+  "name": "gulp-project",
+  "description": "First Gulp Project",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ajax": "^2.1.2",
+    "easing": "*",
+    "fancybox": "^2.1.5",
+    "jquery-ui": "^1.12.0",
+    "jquery": "^3.1.0",
+    "update": "^0.7.4"
+  }
+}

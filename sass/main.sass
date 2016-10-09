@@ -1,0 +1,667 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+@import "app/libs/Magnific-Popup/magnific-popup.sass"
+@import "app/libs/font-awesome-4.2.0/css/font-awesome.sass"
+@import "app/libs/owl-carousel/assets/owl.carousel.sass"
+
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+body 
+	font-family: "OpenSansRegular", sans-serif
+
+//Custom Styles Here
+
+
+//ALWAYS END
+@import "media"
+
+.homesection
+	padding-top: 50px
+	padding-bottom: 25px
+	background-color: #fff
+	
+	h2
+		font-size: em(28px)
+		letter-spacing: 2px
+		text-transform: uppercase
+		line-height: 25px
+	p 
+		padding-top: 25px
+		font-size: em(18px)
+		line-height: 25px
+		padding-bottom: 18px
+	a 	
+		color: #000	
+		text-decoration: none
+		border: solid #000 1px
+		border-radius: 20px
+		padding: 6px 20px
+
+		&:hover,
+		&:active
+		  color: #fff
+		  border-color: #fff
+		  background-color: #1da88a
+		  transition: all .3s ease-in-out
+
+.article-about
+	padding-left: 100px	
+	padding-right: 120px	
+.about-section
+	padding-top: 60px
+	padding-bottom: 50px
+	background-color: #f3f3f3
+	width: 100%
+	line-height: 29px
+	h1
+		letter-spacing: 2px
+		font-size: em(28px)
+		text-transform: uppercase
+		text-align: center
+		line-height: 25px
+
+	h4
+		font-size: em(18px)	
+		padding-top: 20px
+		text-align: center
+		padding: 0 300px 0 300px
+		letter-spacing: 1px
+	h3 
+		padding-left: 50px	
+	h2 
+		letter-spacing: 2px
+		font-size: em(24px)
+		text-transform: uppercase
+		text-align: center
+		line-height: 25px
+	p 	
+		font-size: em(16px)
+		padding: 0 0 0 50px
+.right-article
+	p 
+		padding-left: 150px
+		padding-right: 150px
+		padding-top: 15px
+		padding-bottom: 25px
+.icons
+	display: block
+	text-align: center
+	a 	
+		color: #000	
+		text-decoration: none
+		border: solid #000 1px
+		border-radius: 50%
+		padding: 20px 0px 30px
+		
+		&:focus,
+	
+		&:active
+			color: #fff
+			border-color: #fff
+			background-color: #1da88a
+			transition: all .5s ease-out
+	img 
+		padding: 30px 0px 20px 0px
+		margin: 15px 20px
+.article-btn
+
+	
+	&:active
+		color: #fff
+		border-color: #fff
+		background-color: #1da88a
+		transition: all .5s ease-out
+
+.icon
+	display: inline-block
+	padding-left: 15px
+.projects
+	background-color: #fff
+	width: 100%
+	padding-top: 50px
+	position: absolute
+	padding-bottom: 83px
+	h2
+		font-size: em(28px)
+		letter-spacing: 2px
+		text-transform: uppercase
+		line-height: 25px
+		text-align: center
+				
+	h4
+		padding-top: 25px	 
+
+.proj1, .proj2, .proj3
+	display: block
+	background-repeat: no-repeat
+	float: left
+	height: 100%
+	width: 100%
+	z-index: 100
+	p 
+		opacity: 0
+	    display: none
+		margin: 0
+		text-align: center
+		vertical-align: center
+	    
+	&:hover 
+		p
+			
+			color: #fff
+			font-size: 30px
+			line-height: 224px
+			text-transform: uppercase
+			text-align: center
+			opacity: 1
+			background: rgba(0,0,0,0.7)
+			cursor: pointer
+			box-shadow: inset 0 0 0 5px #1da88a
+			transition: all .6s cubic-bezier(.1, .9, .9, 1.2)
+			vertical-align: center
+			padding: 0
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+.submint-line
+	display: flex
+	align-items: center
+	background-repeat: no-repeat
+	min-height: 70px
+	background-size: cover
+	background-position: center
+	position: relative
+	margin: auto
+	&::before 
+		@extend .before
+		background-color: #1da88a
+		opacity: .7
+	p 
+		color: #fff
+		z-index: 10
+		font-size: em(20px)
+		text-shadow: 0 0 1px #000
+	a 	
+		color: #fff
+		text-decoration: none
+		border: solid #fff 1px
+		border-radius: 20px
+		padding: 6px 20px
+		z-index: 10
+		&:hover,
+		&:active
+		  color: #fff
+		  border-color: #fff
+		  background-color: #1da88a
+		  transition: all .3s ease-in-out
+.services
+	@extend .about-section
+	position: relative
+	background-color: #f3f3f3
+	text-align: center
+	
+
+#Container 
+	.mix
+    	display: none
+.galleryTab
+	position: relative
+	padding-top: 25px
+	margin: 0 15px
+	display: flex
+	justify-content: center
+
+	a 
+		color: #000
+		text-decoration: none
+		line-height: 45px
+		border: solid #000 1px
+		border-radius: 20px
+		padding: 5px 26px
+		z-index: 10
+		margin: 0 15px
+	a:focus,
+	a:hover
+		color: #fff
+		border-color: #fff
+		background-color: #1da88a
+		transition: all .3s ease-in-out
+
+.galleryWrap
+	position: relative
+	padding-top: 35px
+	padding-left: 36px
+	width: 100%
+	height: 100%
+	border: none
+	display: block
+	
+	a 
+		border: none
+		color: transparent
+		margin: 0
+
+	a:focuse
+		border: none
+		border-color: #fff
+		color: transparent
+		background-color: #fff
+	img 
+		padding: 7px
+		margin: 0
+		overflow:hidden
+		transition: all 1s easy-out
+.start
+	display: block
+	position: relative
+	width: 100%
+	padding-bottom: 75px
+	background-color: #f3f3f3
+.start-line
+	@extend .submint-line
+	min-height: 180px
+	display: flex
+	justify-content: center
+	flex-direction: column
+
+	p 	
+		padding: 0
+		text-align: center
+.s-wide
+	margin-top: 30px
+	margin: auto
+	display: block
+	min-height: 180px
+	background-size: cover
+	background-position: center
+	position: relative
+	&::before
+		@extend .before
+		background-color: #000
+		opacity: .85
+.contact-us
+	padding: 25px
+.team
+	margin: 0
+	padding: 50px
+	display: block
+	position: relative
+.team-head
+	@extend .about-section
+	padding: 0 0 20px
+	text-align: center
+	background-color: #fff
+.rounded-img
+	border-radius: 10em
+	border:  #C0C0C0 3px solid   
+	owerflow: hidden
+	width: 138px
+	height: 138px
+	text-align: center
+	margin: auto
+	transition: .5s
+	img
+		max-width: 100%
+
+.item-vetrical
+	text-align: center
+	margin-top: 25px
+	&:hover
+		.rounded-img
+			transform: scale(1.1)
+			border: #1da88a 3px solid
+		.iv-phone
+			color: #1da88a
+	h3 	
+		margin-top: 35px
+		margin-bottom: 15px
+		font-size: em(19px)
+		text-decoration: bold
+		text-transform: uppercase
+	p 	
+		font-size: em(15px)
+		letter-spacing: 2px
+		margin-bottom: 15px
+.iv-phone
+	margin-top: 25px
+	font-size: em(19px)
+	transition: .5s
+	cursor: pointer
+	i 
+		margin-right: 4px
+		font-size: em(19px)
+.contact-us
+	text-align: center
+	p 
+		position: relative
+		color: #fff
+		z-index: 10
+		font-size: em(20px)
+		text-shadow: 0 0 1px #000
+		padding-bottom: 30px
+	a 	
+		position: relative
+		color: #fff
+		text-decoration: none
+		border: solid #fff 1px
+		border-radius: 20px
+		padding: 6px 20px
+		z-index: 10
+		&:hover,
+		&:active
+		  color: #fff
+		  border-color: #fff
+		  background-color: #1da88a
+		  transition: all .3s ease-in-out
+.reviews
+	background-color: #f3f3f3
+	padding-bottom: 50px
+.reviews-title
+	@extend .about-section
+.reviews-article
+	display: block
+	background-color: #fff
+	p 
+		padding-top: 30px
+		padding-bottom: 35px
+		padding-right: 100px
+		font-size: em(18px)
+	h3 	
+		text-transform: uppercase
+		color: #19bd9a
+		text-decoration: bold
+		line-height: 0px
+	h4 	
+		text-transform: uppercase
+		text-decoration: bold
+		padding-bottom: 50px
+	img  
+		display: block
+		border-radius: 10em
+		border:  #1da88a  4px solid   
+		owerflow: hidden
+		width: 138px !important
+		height: 138px !important
+		margin: 60px 0 0 45px !important
+.owl-dots
+	text-align: center
+	.owl-dot
+		width: 10px
+		height: 10px
+		background-color: #c0c0c0
+		border-radius: 10em
+		display: inline-block
+		margin-left: 3px
+		&.active
+			background-color: #1da88a
+.s-wide-1
+	display: block
+	min-height: 300px
+	background-size: cover
+	background-position: center
+	position: relative
+	&::before
+		@extend .before
+		background-color: #000
+		opacity: .85	
+.subscribe
+	z-index: 10
+	text-align: center
+	p 
+		position: relative
+		color: #81868e
+		font-size: em(20px)
+		text-shadow: 0 0 1px #000
+		padding-bottom: 30px
+	a 	
+		position: relative
+		color: #fff
+		text-decoration: none
+		border: solid #fff 1px
+		border-radius: 20px
+		&:hover,
+		&:active
+			color: #fff
+			border-color: #fff
+			background-color: #1da88a
+			transition: all .3s ease-in-out
+	h3
+		position: relative
+		color: #fff  
+		padding-top: 45px
+		margin-bottom: 15px
+		font-size: 1.5em
+		text-transform: uppercase
+.subscribe-form-holder
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	input 	
+		background-color: transparent
+		outline: none
+		border: 1px solid
+		padding: 10px 100px 10px 25px
+		color: #fff
+		border-color: #81868e
+		opacity: .7 
+		transition: opacity 0.3s ease
+		&:hover
+			opacity: 1
+			transition: opacity 0.3s ease
+		&:focus
+			outline: #fff
+			opacity: 1
+			transition: opacity 0.3s ease
+	button
+		margin: 10px auto
+		text-decoration: none
+		color: #fff
+		padding: 11px 45px 11px 35px 
+		background-color: #1da88a 
+		border: none
+.contacts
+	background: #f3f3f3
+	margin: 0
+	padding-top: 50px	
+	display: block
+	position: relative
+.contacts-head
+	@extend .about-section
+	padding: 0 0 20px
+	text-align: center
+	background-color: #f3f3f3
+.contacts-img
+	z-index: 9
+	img 
+		background: #000
+		background-blend-mode: hard-light
+		width: 280px
+		height: 180px
+.contact-item
+	margin: 20px auto	
+	background-color: #fff
+	width: 280px 
+	height: 300px
+.contact-form
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-top: 100px
+	padding-top: 40px
+	background: #fff
+	text-align: center
+	padding-bottom: 20px
+	input 	
+		background-color: transparent
+		outline: none
+		margin: 10px 30px
+		border: 1px solid
+		padding: 10px 70px 10px 25px
+		color: #000
+		border-color: #81868e
+		opacity: .7 
+		transition: opacity 0.3s ease
+		&:hover
+			opacity: 1
+			transition: opacity 0.3s ease
+		&:focus
+			outline: #fff
+			opacity: 1
+			transition: opacity 0.3s ease
+	button
+		text-decoration: none
+		color: #fff
+		padding: 11px 35px 11px 35px 
+		background-color: #1da88a 
+		border: none
+		width: 100%
+	
+.contact-wrap
+	margin-left: 30px
+	margin-right: 30px
+.letter-wrap
+	margin-left: 60px 
+	margin-right: 60px
+	textarea
+		outline: none
+		width: 100%
+		height: em(170px)
+		padding: 10px
+		margin:  15px auto
+.info-wrap
+	margin-left: 30px 
+	margin-right: 30px
+.button-wrap
+	margin-left: 60px 
+	margin-right: 60px
+	padding-bottom: 20px
+footer
+	margin-top: 60px
+	padding-top: 60px
+	padding-bottom: 40px
+	background-color: #fff
+	text-align: center
+	h2
+		text-decoration: bold
+		font-size: em(28px)
+	h4
+		color: #81868e
+	a
+		font-size: em(32px)
+		margin: 8px
+		color: #000
+
+
+.form-callback
+	mt(.1s)
+	max-width: 420px
+	margin: auto
+	box-shadow: rgba(0,0,0,.2) 0 0 20px
+	position: relative
+	overflow: hidden
+	display: inline-block
+
+	a 
+		text-decoration: none
+		padding: 10px 15px
+		background-color: #1da88a 
+		color: #fff
+
+	button 
+		width: 40px
+		padding: 0
+	.mfp-close
+		color: #fff
+		opacity: .3
+		mt(.1s)
+		&:hover
+			opacity: .6
+	.contact-form
+		&-head
+			h4
+				color: #000
+				font-size: em(18px)	
+.mfp-content
+	form 
+		display: block
+		margin: 0 auto
+		input 
+			padding-left: 37px
+			padding-right: 90px
+.contact-form
+	position: relative
+	overflow: hidden
+.my-mfp-zoom-in
+	.form-callback
+		opacity: 0
+		transform: scale(0.95)
+	&.mfp-ready .form-callback
+		opacity: 1
+		transform: scale(1)
+	&.mfp-removing .form-callback
+		transform: scale(0.95)
+		opacity: 0
+	&.mfp-bg
+		opacity: 0
+		transition: opacity 0.3s ease-out
+	&.mfp-ready.mfp-bg
+		opacity: 0.8
+	&.mfp-removing.mfp-bg
+		opacity: 0
+
+*
+	transition: filter .25s ease
+.mfp-wrap ~ *
+	filter: blur(5px)
+.top
+	position: fixed
+	width: 45px
+	height: 45px
+	border-radius: 10em
+	bottom: 20px 
+	right: -120px
+	font-size: em(30px)
+	text-align: center
+	opacity: .4
+	padding-top: 7px
+	background-color:  #fff
+	z-index: 15
+	cursor: pointer
+	i 
+		color: #000
+	&:hover
+		opacity: 1
+		background-color: #1da88a
+	&.active
+		right: 25px
+
